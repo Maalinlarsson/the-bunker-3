@@ -1,3 +1,13 @@
+/*
+Colors:
+- Dark green - #1C2A2C;
+- Footer, dark - #24282B;
+
+Fonts
+- Font-family: 'Raleway', sans-serif;
+- weight: 300, 400, 500, 900 (normal + italic)
+*/
+
 /*---------------- Universal reset ----------------*/
 * {
     margin: 0;
@@ -6,24 +16,162 @@
 }
 
 /*---------------- Temporary styles ----------------*/
-* {
+/* * {
     padding: 0.5rem;
     border: 2px solid lightpink;
 }
+*/
 
-html, 
+/* html, 
 body {
     border: none;
 }
+*/
 
-h1, h2, h3, h4, h5, h6, p, a {
+/* h1, h2, h3, h4, h5, h6, p, a {
     border: 2px solid rgb(179, 84, 84);
 }
+*/
 
-.bg-image {
-    background-color: rgb(255, 266, 132);
-}
 /*---------------- End temporary styles ----------------*/
 
 /*---------------- Utility styles ----------------*/
+.padded-sm              { padding: 2.5%;                     }
+.padded-md              { padding: 5%;                       }
+.padded-lg              { padding: 10%;                      }
+.padded-05              { padding: 0.5rem;                   }
+.padded-1               { padding: 1rem;                     }
+.padded-2               { padding: 2rem;                     }
 
+.margin-t               { margin-top: 5%;                    }
+.margin-b               { margin-bottom: 5%;                 }
+.margin-l               { margin-left: 5%;                   }
+.margin-r               { margin-right: 5%;                  }
+
+.margin-t-1             { margin-top: 1rem;                  }
+.margin-b-1             { margin-bottom: 1rem;               }
+.margin-l-1             { margin-left: 1rem;                 }
+.margin-r-1             { margin-right: 1rem;                }
+
+.margin-t-2             { margin-top: 2rem;                  }
+.margin-b-2             { margin-bottom: 2rem;               }
+.margin-l-2             { margin-left: 2rem;                 }
+.margin-r-2             { margin-right: 2rem;                }
+
+.margin-t-0             { margin-top: 0;                     }
+.margin-b-0             { margin-bottom: 0;                  }
+.margin-l-0             { margin-left: 0;                    }
+.margin-r-0             { margin-right: 0;                   }
+
+.margin-tb              { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr              { margin-left: 5%; margin-right: 5%; }
+
+.tall-40                { min-height: 40vh;                  }
+.tall-50                { min-height: 50vh;                  }
+.tall-60                { min-height: 60vh;                  }
+.tall-70                { min-height: 70vh;                  }
+.tall-80                { min-height: 80vh;                  }
+.tall-90                { min-height: 90vh;                  }
+.tall-100               { min-height: 100vh;                 }
+
+.bg-featured            { background-color:#1C2A2C;        }
+.bg-dark                { background-color:#24282B;        }
+
+.light-text             { color: white;                    }
+
+.left                   { text-align: left;                  }
+.center                 { text-align: center;                }
+.right                  { text-align: right;                 }
+
+/*---------------- Typography styles ----------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.not-bold {
+    font-weight: 400;
+}
+
+.subtle { 
+    opacity: 0.8; 
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+p, li {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+p:last-child,
+li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4e91ad;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+/*---------------- Footer styles ----------------*/
+footer h2 {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+footer p {
+    margin-bottom: 0.2rem;
+}
+
+/*---------------- Background images ----------------*/
+.bg-image {
+    background-color:#24282B; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/the-bunker-1.jpg');
+}
+
+.bg-roof       { background-image: url('/images/the-bunker-5.jpg'); }
+.bg-bed        { background-image: url('/images/the-bunker-1.jpg'); }
+.bg-hallway    { background-image: url('/images/the-bunker-3.jpg'); }
+.bg-lounge     { background-image: url('/images/the-bunker-4.jpg'); }
+.bg-lounge-2   { background-image: url('/images/the-bunker-2.jpg'); }
+.bg-sheets     { background-image: url('/images/the-bunker-7.jpg'); }
+.bg-map        { background-image: url('/images/the-bunker-6.png'); }
+
+.bg-padded     { padding-bottom: 30%;                               }
+
+.social-banner { background-position: 50% 17%;                      }
