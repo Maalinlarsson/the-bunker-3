@@ -8,10 +8,22 @@
 /*---------------- Temporary styles ----------------*/
 * {
     padding: 0.5rem;
-    border: 1px solid lightpink;
+    border: 2px solid lightpink;
 }
 
-html, body {
+html, 
+body {
     border: none;
 }
+
+h1, h2, h3, h4, h5, h6, p, a {
+    border: 2px solid rgb(179, 84, 84);
+}
+
+.bg-image {
+    background-color: rgb(255, 266, 132);
+}
 /*---------------- End temporary styles ----------------*/
+
+/*---------------- Utility styles ----------------*/
+
